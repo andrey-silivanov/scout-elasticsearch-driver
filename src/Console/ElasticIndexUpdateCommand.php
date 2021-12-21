@@ -33,6 +33,7 @@ class ElasticIndexUpdateCommand extends Command
      */
     protected function updateIndex()
     {
+
         $configurator = $this->getIndexConfigurator();
 
         $indexPayload = (new IndexPayload($configurator))->get();
